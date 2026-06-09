@@ -4,6 +4,8 @@ import { ChevronDown, Zap, Brain, Cpu, Eye, Shield, Gauge, Sparkles, ArrowRight 
 
 const asset = (name: string) => new URL(`../../public/images/${name}`, import.meta.url).href;
 const HERO_CYBORG = asset('hero_cyborg.png');
+console.log("BASE_URL =", import.meta.env.BASE_URL);
+console.log("HERO =", HERO_CYBORG);
 const SUBSYSTEM_BRAIN = asset('subsystem_brain.png');
 const SUBSYSTEM_LIMBS = asset('subsystem_limbs.png');
 const SUBSYSTEM_CORE = asset('subsystem_core.png');
