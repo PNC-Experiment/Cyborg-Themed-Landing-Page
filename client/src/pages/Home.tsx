@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Zap, Brain, Cpu, Eye, Shield, Gauge, Sparkles, ArrowRight } from 'lucide-react';
 
-const asset = (name: string) => `${import.meta.env.BASE_URL}images/${name}`;
-
+const asset = (name: string) => new URL(`../../public/images/${name}`, import.meta.url).href;
 const HERO_CYBORG = asset('hero_cyborg.png');
 const SUBSYSTEM_BRAIN = asset('subsystem_brain.png');
 const SUBSYSTEM_LIMBS = asset('subsystem_limbs.png');
