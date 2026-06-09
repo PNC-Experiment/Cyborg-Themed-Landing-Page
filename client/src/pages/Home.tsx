@@ -31,6 +31,13 @@ export default function Home() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+
+  
+<div style={{color:"red",fontSize:"12px"}}>
+  {DEBUG_URL}
+</div>
+
+  
   const features = [
     {
       id: 'brain',
